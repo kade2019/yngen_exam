@@ -43,6 +43,8 @@ dependencies:
   google_fonts: ^2.3.2
   flutter_bloc: ^8.0.1
   intl: ^0.17.0
+  geocoding: ^2.0.4
+  geolocator: ^9.0.1
 
 dev_dependencies:
   flutter_test:

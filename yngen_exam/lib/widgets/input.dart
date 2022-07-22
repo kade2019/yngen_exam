@@ -35,22 +35,27 @@ class _InputState extends State<Input> {
   @override
   Widget build(BuildContext context) {
 
-    return TextField(
-      controller: _ctrl,
-      cursorColor: Colors.black,
-      cursorWidth: 1,
-      obscureText: widget.password,
-      decoration: InputDecoration(
-          hintText: widget.hint,
-          prefixIcon: widget.prefix,
-          suffixIcon: widget.suffix,
-          hintStyle: GoogleFonts.poppins(color: Colors.black38),
-          border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(8),
-              borderSide: BorderSide.none),
-          contentPadding: EdgeInsets.all(12),
-          fillColor: widget.dark ? Colors.black.withOpacity(.05) : Colors.white.withOpacity(.3),
-          filled: true),
+    return Container(
+      decoration: BoxDecoration(
+        border: Border(bottom: BorderSide(color: Colors.grey))
+      ),
+      child: TextField(
+        controller: _ctrl,
+        cursorColor: Colors.black,
+        cursorWidth: 1,
+        obscureText: widget.password,
+        decoration: InputDecoration(
+            hintText: widget.hint,
+            prefixIcon: widget.prefix,
+            suffixIcon: widget.suffix,
+            hintStyle: GoogleFonts.poppins(color: Colors.black38),
+            border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8),
+                borderSide: BorderSide.none),
+            contentPadding: EdgeInsets.all(12),
+            fillColor: widget.dark ? Colors.black.withOpacity(.05) : Colors.white.withOpacity(.3),
+            filled: true),
+      ),
     );
   }
 }

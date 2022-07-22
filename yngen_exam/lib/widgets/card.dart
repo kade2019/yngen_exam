@@ -28,11 +28,16 @@ class MyCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          if(title != null)
-          RegularText(title!),
-          Margin.v(),
-          if(children != null)
-          ...children!
+          if (title != null) ...[
+            Container(
+                padding: EdgeInsets.only(bottom: 10),
+                decoration: BoxDecoration(
+                    border: Border(
+                        bottom: BorderSide(color: Colors.grey.shade200))),
+                child: RegularText(title!)),
+            Margin.v(),
+          ],
+          if (children != null) ...children!
         ],
       ),
     );

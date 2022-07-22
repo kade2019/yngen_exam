@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       // Container
       appBar: AppBar(
-        title: RegularText("WinLots Construction", color: Colors.white,),
+        title: BoldText("WinLots Construction", color: Colors.white,),
         backgroundColor: Colors.black,
         elevation: 0,
       ),
