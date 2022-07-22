@@ -1,0 +1,6 @@
+package com.example.yngen_exam
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
